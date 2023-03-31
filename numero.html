@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    
+    
+    <title>Numero</title>
+
+    <style>
+        /*Styling as modal */
+    </style>
+</head>
+
+<body>
+
+    <div class="n">
+        <p> <b>
+                <font color="#fffff" face="georgia" size="9">
+                    <marquee width="600" scrollamount="0" bgcolor="#9400D3">&#128214 Numero del Himno</marquee>
+                </font>
+
+            </b></p>
+
+        <br>
+        <br>
+        <form id="formulario-busqueda">
+            <input type="text" name="num" value="" id="numero-himno">
+            <br>
+            <br>
+
+            <div id="message"></div>
+            <div class="container">
+              
+                <div class="buttons">
+                    <span class="button number" onclick="agregarnumero('1')">1</span>
+                    <span class="button number" onclick="agregarnumero('2')">2</span>
+                    <span class="button number" onclick="agregarnumero('3')">3</span>
+                    <br>
+                    <span class="button number" onclick="agregarnumero('4')">4</span>
+                   
+                    <span class="button number" onclick="agregarnumero('5')">5</span>
+                    <span class="button number" onclick="agregarnumero('6')">6</span>
+                    <br>
+                    <span class="button number" onclick="agregarnumero('7')">7</span>
+                    <span class="button number" onclick="agregarnumero('8')">8</span>
+                    <span class="button number" onclick="agregarnumero('9')">9</span>
+                    <br>
+                    <span class="button number" onclick="borrar()">&#10006</span>
+                    <span class="button number" onclick="agregarnumero('0')">0</span>
+                    <span class="button number" onclick="buscarHimno()">&#128270</span>
+                </div>
+            </div>
+
+         
+
+
+
+
+        </form>
+
+        <div id="lista-himnos" style="display:none">
+            <h1 id="title">
+                <span id="titleText"></span>
+                <span id="close-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </span>
+            </h1>
+
+            <section id="bodyText">
+    
+
+           
+          
+
+            </section>
+            <section id="coroText">
+
+            </section>
+         <section id="estrofaText">
+                
+                </section>
+
+                <section id="estrofa3Text">
+
+                </section>
+
+        </div>
+
+        <script>
+
+            //borrra el contenido del input del boton buscar
+            function borrar() {
+                var numInput = document.getElementsByName("num")[0];
+                numInput.value = "";
+            }
+
+
+            //agrega el numero al input
+            function agregarnumero(num) {
+                var numInput = document.getElementsByName("num")[0];
+                numInput.value += num;
+            }
+
+            //Close modal
+            const closeButton = document.getElementById('close-button');
+
+            closeButton.addEventListener('click', () => {
+                const listaHimnos = document.getElementById('lista-himnos');
+                listaHimnos.style.display = 'none';
+            });
+
+            const buscarHimno = () => {
+                const tituloHimno = document.querySelector('span#titleText');
+                const bodyHimno = document.querySelector('section#bodyText');
+                const coroHimno = document.querySelector('section#coroText');
+                const estrofaHimno = document.querySelector('section#estrofaText');
+                const estrofa3Himno = document.querySelector('section#estrofa3Text')
+           
+
+                const numeroHimno = document.getElementById('numero-himno').value;
+                const listaHimnos = document.getElementById('lista-himnos');
+                const listaHimnoss = document.getElementById('lista-himnos');
+                const listaHimnosss = document.getElementById('lista-himnos');
+                const listaHimnossss = document.getElementById('lista-himno');
+             
+         
+              
+
+
+                fetch('himnos/h' + numeroHimno + '.json')
+                    .then(response => response.text())
+                    .then(data => {
+
+                        let himno = JSON.parse(data);
+
+                        console.log(himno);
+
+                        if (himno) {
+                            //set listaHimno visibility to visible
+                            listaHimnos.style.display = 'block';
+
+
+                            console.log(tituloHimno);
+
+                            tituloHimno.innerHTML = himno.titulo;
+                            bodyHimno.innerHTML = himno.letra;
+                            coroHimno.innerHTML = himno.coro;
+                            estrofaHimno.innerHTML = himno.estrofa; 
+                            estrofa3Himno.innerHTML = himno.estrofa3;
+                         
+                        
+
+                            //Reset the form
+                            document.getElementById('formulario-busqueda').reset();
+
+                        } else {
+
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error al cargar el archivo JSON:', error);
+                        //Show error message
+                        const message = document.getElementById('message');
+                        message.innerHTML = 'No se encontró el himno';
+                        message.style.color = 'red';
+                        //set listaHimno visibility to visible
+                        listaHimnos.style.display = 'none';
+                        //Clear the console
+                        console.clear();
+                    });
+
+
+            };
+
+            document.getElementById('formulario-busqueda').addEventListener('submit', event => {
+                event.preventDefault();
+                buscarHimno();
+            });
+
+
+
+
+        </script>
+    </div>
+
+
+</body>
+
+</html>
