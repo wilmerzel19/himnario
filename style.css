@@ -86,10 +86,10 @@ input {
   font-size: 50px;
   font-weight: 500;
   margin-top: 30px;
-  color: #eeeff8;
-  background: -webkit-linear-gradient(top, #d6d9e4, #17199e);
+  color: #0e0201;
+  background: -webkit-linear-gradient(top, #fbfbfd, #036aa5);
   border: 1px solid #111386;
-  border-radius: 5px;
+
 
 
 
@@ -127,21 +127,23 @@ input {
   flex: 0 1 25%;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  width: 90px;
+  height: 80px;
+  width: 100px;
   border: 10px solid rgb(247, 241, 241);
   cursor: pointer;
-  background: -webkit-linear-gradient(top, #1b4dd4, #d81ccf);
-  font-size: 2em;
+  background: -webkit-linear-gradient(top, #0330ac, #34b5b9);
+  font-size: 3em;
   position: flex;
+
+
+
+  
   
 
 
 }
 
-.button:nth-child(4n+1) {
-  border-left: 1px solid black;
-}
+
 
 .button:nth-child(4n),
 .button:last-child {
@@ -229,4 +231,31 @@ input {
   font-size: 30px;
 
 }
+
+
+.atras{
+  background: #141361;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  clear: both;
+  position: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-style: oblique;
+  font-weight: 500;
+  color: #0e0201;
+background: -webkit-linear-gradient(top, #0330ac, #34b5b9);
+  font-size: 1em
+}
+  
+
+  
+
 
