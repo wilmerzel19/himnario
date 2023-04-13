@@ -83,12 +83,18 @@ input {
   text-align: center;
   text-decoration: #191baa;
   font-style: oblique;
-  font-size: 50px;
+  font-size: 80px;
   font-weight: 500;
   margin-top: 30px;
   color: #0e0201;
   background: -webkit-linear-gradient(top, #fbfbfd, #036aa5);
   border: 1px solid #111386;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  
 
 
 
