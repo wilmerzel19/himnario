@@ -172,7 +172,7 @@ input {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
-  height: 650px;
+  height: 750px;
   background: #fff;
   border-radius: 10px;
 
@@ -185,7 +185,7 @@ input {
   color: #fff;
   border-radius: 5px 5px 0 0;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 500px;
   margin: 0;
   clear: both;
 }
