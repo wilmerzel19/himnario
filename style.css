@@ -3,24 +3,20 @@
 @tailwind utilities;
 
 body {
-    @apply text-gray-300 p-0 m-0;
+  @apply text-gray-300 p-0 m-0;
 }
 
 header {
-    @apply bg-gray-800;
+  @apply bg-gray-800;
 }
 
 /* Path: index.css */
 
-
 .containerr {
   background-color: #f8f1f1;
-
-
 }
 
 .img {
-
   background-color: #fff;
   border-radius: 50%;
   margin: 0 auto;
@@ -37,13 +33,12 @@ header {
   margin: 0 auto;
   display: block;
   text-align: center;
-
 }
 
 .navbar {
   content: "";
   background: #a706a7;
-  display:flex;
+  display: flex;
   height: 2px;
   margin: 1 auto;
   width: 100%;
@@ -51,7 +46,6 @@ header {
   margin-bottom: 50px;
 
   position: flex;
-
 }
 
 .h4 {
@@ -64,7 +58,6 @@ header {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 
 * {
   box-sizing: border-box;
@@ -84,21 +77,16 @@ input {
   text-decoration: #191baa;
   font-style: oblique;
   font-size: 80px;
-  font-weight: 500;
+  font-weight: 500px;
   margin-top: 30px;
-  color: #0e0201;
+  color: #978786;
   background: -webkit-linear-gradient(top, #fbfbfd, #036aa5);
   border: 1px solid #111386;
   border-radius: 5px;
-  box-shadow: 0 0 5px 0 #000;
+  box-shadow: 0 0 5px 0 #0e0d0d;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
-  
-
-
-
-
 }
 
 .containerd {
@@ -121,10 +109,9 @@ input {
   justify-content: flex-end;
   align-items: center;
   font-size: 1.5em;
-  background: #000;
+  background: #0f0f0f;
   color: #fff;
   padding: 0 10px;
-
 }
 
 .button {
@@ -140,16 +127,8 @@ input {
   background: -webkit-linear-gradient(top, #037cac, #34b5b9);
   font-size: 3em;
   position: flex;
-
-
-
-  
-  
-
-
+  border-radius: 20px;
 }
-
-
 
 .button:nth-child(4n),
 .button:last-child {
@@ -165,9 +144,8 @@ input {
   border: 2px solid black;
 }
 
-
 #lista-himnos {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -175,13 +153,12 @@ input {
   height: 650px;
   background: #fff;
   border-radius: 10px;
-
-
+  overflow-y: auto;
 }
 
 #lista-himnos h1 {
   padding: 10px 20px;
-  background: #302eaa;
+  background: #097685;
   color: #fff;
   border-radius: 5px 5px 0 0;
   font-size: 20px;
@@ -192,7 +169,7 @@ input {
 
 #lista-himnos h1 span.titleText {
   float: center;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 500;
   cursor: pointer;
   text-align: center;
@@ -210,19 +187,15 @@ input {
 }
 
 #lista-himnos section {
-
   padding: auto;
-  line-height: 1.2;
+  line-height: 1;
   overflow-y: auto;
-  height: 155px;
+  height: 110px;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #141361;
   font-size: large;
   position: flex;
-
-
-
 }
 
 #message {
@@ -235,7 +208,4 @@ input {
   padding: 0;
   text-align: center;
   font-size: 30px;
-
 }
-
-
