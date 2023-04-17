@@ -209,3 +209,8 @@ input {
   text-align: center;
   font-size: 30px;
 }
+
+.bg-blue-500 {
+  background-color: #097685;
+  color: #fff;
+}
