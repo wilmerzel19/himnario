@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+        
+<nav class="border-gray-200 bg-blue-500 dark:bg-gray-800 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="index.html" class="flex items-center">
+          <img src="img/logo.png" class="h-8 mr-3" />
+          <span   class="self-center text-2xl font-semibold whitespace-nowrap text-white">Nombre DEL CORO</span>
+      </a>
+      <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+    
+      </div>
+    </div>
+  </nav>
+
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo de búsqueda de himnos por nombre</title>
+    <style>
+      /* Definición de estilos para el cuerpo de la página */
+      body {
+        font-family: Arial, sans-serif; /* Fuente de letra predeterminada */
+      }
+      
+      /* Definición de estilos para el cuadro de búsqueda */
+      #search-box {
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+      }
+      
+      /* Definición de estilos para la lista de himnos */
+      #hymn-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      /* Definición de estilos para cada elemento de la lista de himnos */
+      .hymn-item {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      
+      /* Definición de estilos para el título de cada himno en la lista */
+      .hymn-title {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="bodyText">
+    
+
+           
+          
+
+    </section>
+    <section id="coroText">
+
+    </section>
+ <section id="estrofaText">
+        
+        </section>
+
+        <section id="estrofa3Text">
+
+        </section>
+    <input type="text" id="search-box" placeholder="Buscar himno por nombre">
+    <ul id="hymn-list">
+        <script>
+          var hymnTitles = ["A la casa de Jairo 1", "Himno 2", "Himno 3"];
+          
+          for (var i = 0; i < hymnTitles.length; i++) {
+            document.write('<li class="hymn-item"><h3 class="hymn-title">' + hymnTitles[i] + '</h3></li>');
+          }
+        </script>
+      </ul>
+      
+      
+      <!-- Agregar más elementos de la lista de himnos aquí -->
+    </ul>
+    
+    <script>
+      // Obtener el cuadro de búsqueda y la lista de himnos
+      var searchBox = document.getElementById('search-box');
+      var hymnList = document.getElementById('hymn-list');
+      
+      // Agregar un evento de entrada al cuadro de búsqueda
+      searchBox.addEventListener('input', function() {
+        // Obtener el texto de búsqueda
+        var searchText = searchBox.value.toLowerCase();
+        
+        // Obtener todos los elementos de la lista de himnos
+        var hymnItems = hymnList.getElementsByTagName('li');
+        
+        // Recorrer todos los elementos de la lista de himnos y ocultar aquellos que no coincidan con el texto de búsqueda
+        for (var i = 0; i < hymnItems.length; i++) {
+          var hymnTitle = hymnItems[i].querySelector('.hymn-title');
+          var hymnText = hymnTitle.textContent.toLowerCase();
+          
+          if (hymnText.indexOf(searchText) !== -1) {
+            hymnItems[i].style.display = 'block';
+          } else {
+            hymnItems[i].style.display = 'none';
+          }
+        }
+      });
+      
+
+   //Close modal
+   const closeButton = document.getElementById('close-button');
+
+closeButton.addEventListener('click', () => {
+    const listaHimnos = document.getElementById('lista-himnos');
+    listaHimnos.style.display = 'none';
+});
+
+const buscarHimno = () => {
+    const tituloHimno = document.querySelector('span#titleText');
+    const bodyHimno = document.querySelector('section#bodyText');
+    const coroHimno = document.querySelector('section#coroText');
+    const estrofaHimno = document.querySelector('section#estrofaText');
+    const estrofa3Himno = document.querySelector('section#estrofa3Text')
+
+
+    const numeroHimno = document.getElementById('numero-himno').value;
+    const listaHimnos = document.getElementById('lista-himnos');
+    const listaHimnoss = document.getElementById('lista-himnos');
+    const listaHimnosss = document.getElementById('lista-himnos');
+    const listaHimnossss = document.getElementById('lista-himno');
+
+      fetch('himnos/h' + numeroHimno + '.json')
+                    .then(response => response.text())
+                    .then(data => {
+
+                        let himno = JSON.parse(data);
+
+                        console.log(himno);
+
+                        if (himno) {
+                            //set listaHimno visibility to visible
+                            listaHimnos.style.display = 'block';
+
+
+                            console.log(tituloHimno);
+
+                            tituloHimno.innerHTML = himno.titulo;
+                            bodyHimno.innerHTML = himno.letra;
+                            coroHimno.innerHTML = himno.coro;
+                            estrofaHimno.innerHTML = himno.estrofa; 
+                            estrofa3Himno.innerHTML = himno.estrofa3;
+                    
+                        }
+                    })
+}
+                
+    </script>
+  </body
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script> 
+</body>
+</html>
