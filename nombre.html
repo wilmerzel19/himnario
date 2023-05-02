@@ -1,19 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
-    <title>Document</title>
+    <title>Nombre</title>
+
 </head>
 <body>
-        
+    
 <nav class="border-gray-200 bg-blue-500 dark:bg-gray-800 dark:border-gray-700">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="index.html" class="flex items-center">
           <img src="img/logo.png" class="h-8 mr-3" />
-          <span   class="self-center text-2xl font-semibold whitespace-nowrap text-white">Nombre DEL CORO</span>
+          <span   class="self-center text-2xl font-semibold whitespace-nowrap text-white">NOMBRE DEL CORO</span>
       </a>
       <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -23,199 +25,16 @@
       </div>
     </div>
   </nav>
+  <br>
 
-  <!DOCTYPE html>
-<html>
-  <head>
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <title>Ejemplo de búsqueda de himnos por nombre</title>
-      <style>
-        /* Definición de estilos para el cuerpo de la página */
-        body {
-          font-family: Arial, sans-serif; /* Fuente de letra predeterminada */
-        }
-        
-        /* Definición de estilos para el cuadro de búsqueda */
-        #search-box {
-          display: block;
-          margin-bottom: 10px;
-          padding: 10px;
-          font-size: 16px;
-          border: none;
-          border-bottom: 1px solid #1269ac;
-          width: 100%;
-        }
-        
-        /* Definición de estilos para la lista de himnos */
-        #hymn-list {
-          list-style-type: none;
-          padding: 0;
-          margin: 0;
-        }
-        
-        /* Definición de estilos para cada elemento de la lista de himnos */
-        .hymn-item {
-          padding: 10px;
-          border-bottom: 1px solid #0972b4;
-        }
-        
-        /* Definición de estilos para el título de cada himno en la lista */
-        .hymn-title {
-          margin: 0;
-        }
-      </style>
-    </head>
-    <body>
-      <!-- Cuadro de búsqueda -->
-      <input type="text" id="search-box" placeholder="Buscar himno por nombre">
-      
-      <!-- Lista de himnos -->
-      <ul id="hymn-list">
+  <input type="text" id="search-box" placeholder="Buscar himno por nombre">
 
-        
+    <!-- Lista de himnos -->
+    <ul id="hymn-list">
+      <!--lista-->
+    </ul>
 
-        <!-- Elementos de la lista se generan dinámicamente con JavaScript -->
-      </ul>
-      
-      <script>
-        // Datos de ejemplo para los títulos de los himnos
-        var hymnTitles = ["A la casa de Jairo iba Jesús", "Alabaré a mi Señor", "Aquí estoy Señor" , "A ti sea la gloria", "A ti sea la gloria Señor", "A ti sea la gloria, Señor"];
-        
-        // Obtener la lista de himnos
-        var hymnList = document.getElementById('hymn-list');
-        
-        // Generar los elementos de la lista de himnos y agregarlos a la lista
-        for (var i = 0; i < hymnTitles.length; i++) {
-          var hymnItem = document.createElement('li');
-          hymnItem.className = 'hymn-item';
-          
-          var hymnTitle = document.createElement('h3');
-          hymnTitle.className = 'hymn-title';
-          hymnTitle.appendChild(document.createTextNode(hymnTitles[i]));
-          
-          hymnItem.appendChild(hymnTitle);
-          hymnList.appendChild(hymnItem);
-        }
-        
-        // Obtener el cuadro de búsqueda y la lista de himnos
-        var searchBox = document.getElementById('search-box');
-        
-        // Agregar un evento de entrada al cuadro de búsqueda
-        searchBox.addEventListener('input', function() {
-          // Obtener el texto de búsqueda
-          var searchText = searchBox.value.toLowerCase();
-          
-          // Obtener todos los elementos de la lista de himnos
-          var hymnItems = hymnList.getElementsByTagName('li');
-          
-          // Recorrer todos los elementos de la lista de himnos y ocultar aquellos que no coincidan con el texto de búsqueda
-          for (var i = 0; i < hymnItems.length; i++) {
-            var hymnTitle = hymnItems[i].querySelector('.hymn-title');
-            var hymnText = hymnTitle.textContent
-            if (hymnText.toLowerCase().indexOf(searchText) > -1) {
-              hymnItems[i].style.display = '';
-            } else {
-              hymnItems[i].style.display = 'none';
-            }
-          }
-        });
-    
-      </script>
-<html>
-<head>
-	<title>Ejemplo de búsqueda de himnos por nombre</title>
-	<style>
-		/* Definición de estilos para el cuerpo de la página */
-		body {
-			font-family: Arial, sans-serif; /* Fuente de letra predeterminada */
-		}
-		
-		/* Definición de estilos para el cuadro de búsqueda */
-		#search-box {
-			display: block;
-			margin-bottom: 10px;
-			padding: 10px;
-			font-size: 16px;
-			border: none;
-			border-bottom: 1px solid #ccc;
-			width: 100%;
-		}
-		
-		/* Definición de estilos para la lista de himnos */
-		#hymn-list {
-			list-style-type: none;
-			padding: 0;
-			margin: 0;
-		}
-		
-		/* Definición de estilos para cada elemento de la lista de himnos */
-		.hymn-item {
-			padding: 10px;
-			border-bottom: 1px solid #ccc;
-			cursor: pointer;
-		}
-		
-		/* Definición de estilos para el título de cada himno en la lista */
-		.hymn-title {
-			margin: 0;
-		}
-
-		/* Definición de estilos para el modal */
-		#modal {
-			display: none;
-			position: fixed;
-			z-index: 1;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			overflow: auto;
-			background-color: rgba(0,0,0,0.4);
-		}
-
-		/* Definición de estilos para el contenido del modal */
-		#modal-content {
-			background-color: #fefefe;
-			margin: 15% auto;
-			padding: 20px;
-			border: 1px solid #888;
-			width: 80%;
-			max-width: 600px;
-			position: relative;
-			border-radius: 5px;
-			box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-		}
-
-		/* Definición de estilos para el botón de cerrar del modal */
-		.modal-close {
-			position: absolute;
-			top: 10px;
-			right: 10px;
-			font-size: 28px;
-			font-weight: bold;
-			color: #aaa;
-			cursor: pointer;
-		}
-	</style>
-</head>
-<body>
-  
-  <div class="n">
-      
-  
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <div id="message"></div>
-        <div class="container">
-	
-
-  
-          <div id="lista-himnos" style="display:none">
+        <div id="lista-himnos" style="display:none">
             <h1 id="title">
                 <span id="titleText"></span>
                 <span id="close-button">
@@ -227,129 +46,127 @@
                 </span>
             </h1>
 
-            <section id="bodyText">
+        <section id="bodyText"></section>
+        <section id="coroText"></section>
+        <section id="estrofaText"></section>
+        <section id="estrofa3Text"></section>
+
+</div>
+
+</div>
+<style>
+    #search-box {
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+      }
+    #hymn-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      /* Definición de estilos para cada elemento de la lista de himnos */
+      .hymn-item {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+      }
+
+      /* Definición de estilos para el título de cada himno en la lista */
+      .hymn-title {
+        margin: 0;
+      }
+          body {
+            font-family: Arial, sans-serif;
+            /* Fuente de letra predeterminada */
+          }
+</style>
+
+<script>
+    var hymnList = document.getElementById('hymn-list');
+    var datos;
+    const himnosFetch = async () => {
+    //Pase algunos hinnos al archivo himnos.json, despues pasas los demas
+      const response = await fetch('/himnos/himnos.json');
+      const data = await response.json();
+      console.log(data);
+      datos = data;
+      for (let i of data) {
+
+        document.getElementById("hymn-list").innerHTML +=
+          "<li onclick=buscarHimno('" + i.id + "') class='hymn-item'><h3 class='hymn-title'>" + i.titulo + "</h3></li><h5 id='tituloinno" + i.id + "'></h5></br>";
+      }
+    }
     
+    
+    var searchBox = document.getElementById('search-box'); // Obtener el cuadro de búsqueda y la lista de himnos
 
-           
-          
+    // Agregar un evento de entrada al cuadro de búsqueda
+    searchBox.addEventListener('input', function () {
+      // Obtener el texto de búsqueda
+      var searchText = searchBox.value.toLowerCase();
 
-            </section>
-            <section id="coroText">
+      // Obtener todos los elementos de la lista de himnos
+      var hymnItems = hymnList.getElementsByTagName('li');
 
-            </section>
-         <section id="estrofaText">
-                
-                </section>
+      // Recorrer todos los elementos de la lista de himnos y ocultar aquellos que no coincidan con el texto de búsqueda
+      for (var i = 0; i < hymnItems.length; i++) {
+        var hymnTitle = hymnItems[i].querySelector('.hymn-title');
+        var hymnText = hymnTitle.textContent
+        if (hymnText.toLowerCase().indexOf(searchText) > -1) {
+          hymnItems[i].style.display = '';
+        } else {
+          hymnItems[i].style.display = 'none';
+        }
+      }
+    });
 
-                <section id="estrofa3Text">
+    const buscarHimno = (id) => {
+        datos.forEach((himno) => {
+          if (himno.id == id) {
+            console.log(himno);
 
-                </section>
+            document.getElementById('titleText').innerHTML = himno.titulo;
+            document.getElementById('bodyText').innerHTML = himno.letra;
+            document.getElementById('coroText').innerHTML = himno.coro;
+            document.getElementById('estrofaText').innerHTML = himno.estrofa;
+            document.getElementById('estrofa3Text').innerHTML = himno.estrofa3;
+            const listaHimnos = document.getElementById('lista-himnos');
+            listaHimnos.style.display = 'block';
 
-        </div>
-
-        <script>
-
-            //borrra el contenido del input del boton buscar
-            function borrar() {
-                var numInput = document.getElementsByName("num")[0];
-                numInput.value = "";
+            //letra debajo del titulo
+            document.getElementById('tituloinno'+id).innerHTML = himno.letra;
+            if (document.getElementById('tituloinno'+id).style.display == 'block') {
+              document.getElementById('tituloinno'+id).style.display = 'none';
+            } else {
+              document.getElementById('tituloinno'+id).style.display = 'block';
             }
-
-
-            //agrega el numero al input
-            function agregarnumero(num) {
-                var numInput = document.getElementsByName("num")[0];
-                numInput.value += num;
-            }
-
-            //Close modal
-            const closeButton = document.getElementById('close-button');
-
-            closeButton.addEventListener('click', () => {
-                const listaHimnos = document.getElementById('lista-himnos');
-                listaHimnos.style.display = 'none';
-            });
-
-            const buscarHimno = () => {
-                const tituloHimno = document.querySelector('span#titleText');
-                const bodyHimno = document.querySelector('section#bodyText');
-                const coroHimno = document.querySelector('section#coroText');
-                const estrofaHimno = document.querySelector('section#estrofaText');
-                const estrofa3Himno = document.querySelector('section#estrofa3Text')
-           
-
-                const numeroHimno = document.getElementById('numero-himno').value;
-                const listaHimnos = document.getElementById('lista-himnos');
-                const listaHimnoss = document.getElementById('lista-himnos');
-                const listaHimnosss = document.getElementById('lista-himnos');
-                const listaHimnossss = document.getElementById('lista-himno');
-             
-         
-              
-
-
-                fetch('himnos/h' + numeroHimno + '.json')
-                    .then(response => response.text())
-                    .then(data => {
-
-                        let himno = JSON.parse(data);
-
-                        console.log(himno);
-
-                        if (himno) {
-                            //set listaHimno visibility to visible
-                            listaHimnos.style.display = 'block';
-
-
-                            console.log(tituloHimno);
-
-                            tituloHimno.innerHTML = himno.titulo;
-                            bodyHimno.innerHTML = himno.letra;
-                            coroHimno.innerHTML = himno.coro;
-                            estrofaHimno.innerHTML = himno.estrofa; 
-                            estrofa3Himno.innerHTML = himno.estrofa3;
-                         
-                        
-
-                            //Reset the form
-                            document.getElementById('formulario-busqueda').reset();
-
-                        } else {
-
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error al cargar el archivo JSON:', error);
-                        //Show error message
-                        const message = document.getElementById('message');
-                        message.innerHTML = 'No se encontró el himno';
-                        message.style.color = 'red';
-                        //set listaHimno visibility to visible
-                        listaHimnos.style.display = 'none';
-                        //Clear the console
-                        console.clear();
-                    });
-
-
-            };
-
-            document.getElementById('formulario-busqueda').addEventListener('submit', event => {
-                event.preventDefault();
-                buscarHimno();
-            });
-
 
             
+          }
+        });
+        
+      };
 
+      //const closeButton = document.getElementById('close-button');
+      //closeButton.addEventListener('click', () => {
+                //const listaHimnos = document.getElementById('lista-himnos');
+                //listaHimnos.style.display = 'none';});
 
-        </script>
-    </div>
+    document.getElementById("close-button").addEventListener("click", function() {
+    document.getElementById("lista-himnos").style.display = "none";
+    });
+    
 
+    himnosFetch();
+</script>
 
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 </body>
+
 </html>
