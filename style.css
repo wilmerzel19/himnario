@@ -37,7 +37,7 @@ header {
 
 .navbar {
   content: "";
-  background: #a706a7;
+  display: table;
   display: flex;
   height: 2px;
   margin: 1 auto;
@@ -48,28 +48,20 @@ header {
   position: flex;
 }
 
-
 * {
   box-sizing: border-box;
 }
 
 .input {
-  color: #dfe0e7;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
+  color: #fcec0b;
+  height: 70px;
   width: 100px;
-  border: 10px solid rgb(247, 241, 241);
+  border: 90px solid rgb(247, 241, 241);
   cursor: pointer;
   background: -webkit-linear-gradient(top, #037cac, #34b5b9);
   font-size: 3em;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  
-  
 }
-
-
 
 .containerd {
   display: flex;
@@ -90,7 +82,7 @@ header {
   border: 1px solid black;
   justify-content: flex-end;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 3em;
   background: #0f0f0f;
   color: #fff;
   padding: 0 10px;
@@ -114,7 +106,7 @@ header {
 
 .button:nth-child(4n),
 .button:last-child {
-  background: #141361;
+  background: #135161;
   color: #fff;
 }
 
@@ -123,7 +115,7 @@ header {
 }
 
 .doubleBordered {
-  border: 2px solid black;
+  border: 2px solid rgb(235, 232, 232);
 }
 
 #lista-himnos {
@@ -197,13 +189,11 @@ header {
   color: #fff;
 }
 .text-violet-500 {
-  color:#037cac;
+  color: #037cac;
   font-size: larger;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border-top: 20px;
-
-
-
-  
-
+}
+input[type="text"] {
+  inputmode: numeric;
 }

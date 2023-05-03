@@ -39,8 +39,8 @@
     <div class="n">
       
         <form id="formulario-busqueda">
-            <input type="text" name="num" id="numero-himno" class="input w-full" />
-          
+            <input type="text" name="num" id="numero-himno" class="input w-full" inputmode="numeric" pattern="[0-9]{3}" maxlength="3"  title="Por favor, introduce tres números" required />
+
             <br>
             <br>
             <br>
@@ -199,8 +199,6 @@
                         //Clear the console
                         console.clear();
                     });
-
-
             };
 
             document.getElementById('formulario-busqueda').addEventListener('submit', event => {
@@ -208,9 +206,13 @@
                 buscarHimno();
             });
 
+            const inputNum = document.getElementById('numero-himno');
 
-            
-
+  inputNum.addEventListener('input', () => {
+  if (inputNum.value.length > 3) {
+    inputNum.value = inputNum.value.slice(0, 3);
+  }
+});
 
         </script>
     </div>
