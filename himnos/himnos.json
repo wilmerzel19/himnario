@@ -84,7 +84,45 @@
     "estrofa":"En gloria no habrá más tristeza,<BR>Arriendo no pagaré;Tendré‚ <BR>las riquezas del cielo.<BR>De casa me cambiaré.",
     "estrofa3":""
  
-}
+},
+{
+    
+    "id": "11",
+    "titulo": "11- Me pongo a pensar. ",
+    "letra": "Me pongo a pensar y a recordar,  de donde salí,<BR>  Un hoyo de mal, pecado a raudal,  perdido me vi;<BR> Tu amor me buscó, de allí me sacó, <BR>¡Qué gracia sin par! ¿Con qué‚<BR> pagaré, qué‚ suma daré, para compensar?",
+    "coro":"Eres el gran Dios, eres Salvador,  no tienes igual; <BR>  Al cielo iré, Tu paz gozaré, siglos sin cesar. <br> Te iré a alabar, a glorificar, constante allí,<BR>  Perfecto seré, cuando estaré, <BR>juntito a Ti",
+    "estrofa":"Te vengo a decir, te vengo a decir, oh mi Salvador,<br> Que yo te amo a Ti, que yo te amo a Ti Con el corazón;<br> Te vengo a decir, te vengo a decir, toda la verdad,<br> Yo te amo Señor,<BR> te quiero Señor con el corazón.",
+    "estrofa3":"Yo quiero cantar, yo quiero cantar de gozo y de paz,<BR> Yo quiero llorar, yo quiero llorar de felicidad;<BR>Te vengo a decir, te vengo a decirtoda la verdad,<BR>Yo te amo Señor, <BR>te quiero Señor con el corazón. "
+ 
+},
+{
+      
+    "id": "12",
+    "titulo": "12- Hay una senda.",
+    "letra": "Hay una senda Que el mundo no conoce,<BR>   hay una senda que yo pude encontrar;<BR> //En Cristo tengo  la salvación de mi alma <BR>Cristo es la senda que me pudo salvar.// ",
+    "coro":"Las amistades y todos mis parientes,<BR>Fueron las gentes que yo relacioné;<BR>//Me aborrecieronpor causa de Su nombre,<BR>Cuando supieron que a Cristo me entregué.//",
+    "estrofa":"Y aquel camino de tantos sufrimientos,<BR> Aquel camino que el cielo me trazó; <BR>//Fue transformado en aquel feliz momento, <BR>Cuando mi Cristo del cielo me llamó//",
+    "estrofa3":""
+ 
+},
+{
+    "id": "13",
+    "titulo": "13- El buen sembrador. ",
+    "letra": "El buen sembrador salió a sembrar, Salió a sembrar, <BR>salió a sembrar. El buen sembrador salió a sembrar,<BR> La santa Palabra de Dios.",
+    "coro":"Cayó una parte en los pedregales,En los pedregales,<BR> en los pedregales, Cayó una parte en los pedregales,<BR> Por falta de raíz se secó.<BR><BR>Cayó otra parte en zarzas y espinas,  En zarzas y espinas,<BR> en zarzas y espinas,  Cayó otra parte en zarzas y espinas,<BR> Y ahogada ningún fruto dio.",
+    "estrofa":"<BR>Cayó la demás, pues,En un buen terreno,<BR> En un buen terreno, En un buen terreno, Cayó la demás,<BR> pues, en un buen  terreno, <BR>Creció y su fruto dio.<BR>",
+    "estrofa3":"¿Qué tal buen amigo, de tu corazón,<BR> De tu corazón, de tu corazón?¿Qué tal buen amigo,<BR> de tu corazón,En que la semilla cayó?"
+ 
+},
 
+{
+    "id":"14",
+    "titulo": "14- La B-i-b-l-i-a.",
+    "letra": "<BR><BR>LA B-I-B-L-I-A,<BR> es el  libro de mi Dios;<BR> En ella sólo confío yo,<BR>  la B-I-B-L-I-A",
+    "coro":"",
+    "estrofa":"",
+    "estrofa3":""
+ 
+}
 
 ]
