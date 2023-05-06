@@ -96,25 +96,16 @@
                     </svg>
                 </span>
             </h1>
-
-            <section id="bodyText">
-    
-
-           
-          
-
-            </section>
-            <section id="coroText">
-
-            </section>
-         <section id="estrofaText">
-                
-                </section>
-
-                <section id="estrofa3Text">
-
-                </section>
-
+            <section>
+                <br>
+            <h3 id="bodyText"></h3>
+            <br>
+            <h3 id="coroText"></h3>
+            <br>
+            <h3 id="estrofaText"></h3>
+            <br>
+            <h3 id="estrofa3Text"></h3>
+        </section>
         </div>
 
         <script>
@@ -141,11 +132,12 @@
             });
 
             const buscarHimno = () => {
-                const tituloHimno = document.querySelector('span#titleText');
-                const bodyHimno = document.querySelector('section#bodyText');
-                const coroHimno = document.querySelector('section#coroText');
-                const estrofaHimno = document.querySelector('section#estrofaText');
-                const estrofa3Himno = document.querySelector('section#estrofa3Text')
+                const tituloHimno = document.getElementById('titleText');
+                const bodyHimno = document.getElementById('bodyText');
+
+                const coroHimno = document.getElementById('coroText');
+                const estrofaHimno = document.getElementById('estrofaText');
+                const estrofa3Himno = document.getElementById('estrofa3Text')
            
 
                 const numeroHimno = document.getElementById('numero-himno').value;
