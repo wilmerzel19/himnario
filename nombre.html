@@ -46,10 +46,16 @@
                 </span>
             </h1>
 
-        <section id="bodyText"></section>
-        <section id="coroText"></section>
-        <section id="estrofaText"></section>
-        <section id="estrofa3Text"></section>
+        <section>
+          <h3 id="bodyText"></h3>
+          <br>
+          
+        <h3 id="coroText"></h3>
+        <br>
+        <h3 id="estrofaText"></h3>
+        <br>
+        <h3 id="estrofa3Text"></h3>
+      </section>
 
 </div>
 
@@ -99,7 +105,7 @@
       for (let i of data) {
 
         document.getElementById("hymn-list").innerHTML +=
-          "<li onclick=buscarHimno('" + i.id + "') class='hymn-item'><h3 class='hymn-title'>" + i.titulo + "</h3></li><h5 id='tituloinno" + i.id + "'></h5></br>";
+          "<li onclick=buscarHimno('" + i.id + "') class='hymn-item'><h3 class='hymn-title'>" + i.titulo + "</h3></li></br>";
       }
     }
     
@@ -131,11 +137,16 @@
           if (himno.id == id) {
             console.log(himno);
 
+
+
             document.getElementById('titleText').innerHTML = himno.titulo;
+            
             document.getElementById('bodyText').innerHTML = himno.letra;
             document.getElementById('coroText').innerHTML = himno.coro;
             document.getElementById('estrofaText').innerHTML = himno.estrofa;
             document.getElementById('estrofa3Text').innerHTML = himno.estrofa3;
+
+
             const listaHimnos = document.getElementById('lista-himnos');
             listaHimnos.style.display = 'block';
 
