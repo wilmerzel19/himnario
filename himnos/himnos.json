@@ -1,7 +1,7 @@
 [{
     "id": "1",
     "titulo": "1- A la casa de Jairo iba Jesús",
-    "letra": "A la casa de Jairo iba Jesús <br> Una gran multitud iba tras Él, <br> Y una pobre mujer llena de fe,<br> No miró la multitud, más le tocó.",
+    "letra": "<br><br>A la casa de Jairo iba Jesús <br> Una gran multitud iba tras Él, <br> Y una pobre mujer llena de fe,<br> No miró la multitud, más le tocó.",
     "coro": "Coro <br>Haz tú, cual la mujer,<br> que fue y tocó,El borde del vestido del Señor;<br>Virtud salió de Él, y ella sanó,<br>Y si le tocas tú, salvo serás.",
     "estrofa": "Aquel pueblo inmenso le escuchó;<br>Una parte creía al Señor;<br>Pero el resto furioso rechazó,<br>A este Mensajero del excelso amor.",
     "estrofa3": "Jesucristo, fui yo quien te tocó,<br>Mi mal ningún doctor pudo quitar;<br>Mas Tu mano potente me sanó,<br>Ya mi alma y cuerpo traigo a tu altar."
@@ -9,7 +9,7 @@
 {
     "id": "2",
     "titulo": "2- Anduve yo desconsolado",
-    "letra": "Anduve yo desconsolado,<br>Sin rumbo fijo me encontré;<br>Buscaba yo placer en vano,Doquier busqué‚ no lo hallé.",
+    "letra": "<br><br>Anduve yo desconsolado,<br>Sin rumbo fijo me encontré;<br>Buscaba yo placer en vano,Doquier busqué‚ no lo hallé.",
     "coro": " coro<br>Más un día di con Cristo,Le encontré‚<br> a solas yo;Él llenó mi corazón de gozo,<br>Y mi dura carga Él llevó.",
     "estrofa": "Pase, gran parte de mi vida<br>Buscando la felicidad;<br>El mundo no la pudo darme<br>Me vi perdido en la maldad.",
     "estrofa3": ""
@@ -17,7 +17,7 @@
 {
     "id": "3",
     "titulo": "3- Me guía él con tanto amor",
-    "letra": "Me guía él con tanto amor,<br>Yo por siempre le alabaré;<br>En tentación o en aflicción,    Él es mi amigo fiel. <br>   Cristo me guía, por el     turbulento mar,<br>Él es mi piloto, siempre me  guía Él.",
+    "letra": "<br><br>Me guía él con tanto amor,<br>Yo por siempre le alabaré;<br>En tentación o en aflicción,    Él es mi amigo fiel. <br>   Cristo me guía, por el     turbulento mar,<br>Él es mi piloto, siempre me  guía Él.",
     "coro":"",
     "estrofa":"",
     "estrofa3":""
@@ -35,7 +35,7 @@
 {
     "id": "5",
     "titulo": "5- Aunque ruja la tormenta",
-    "letra": "Aunque ruja la tormenta De mi vida en derredor<br> Al amparo de la Roca salvo estoy.   <br>Si la tempestad aumenta no tendré‚ ningún temor;<br>Al amparo de la Roca salvo estoy.",
+    "letra": "<br><br>Aunque ruja la tormenta De mi vida en derredor<br> Al amparo de la Roca salvo estoy.   <br>Si la tempestad aumenta no tendré‚ ningún temor;<br>Al amparo de la Roca salvo estoy.",
     "coro": "//Al amparo de la Roca salvo estoy//<br>Si conmigo está el Señor, No tendré‚ ningún temor, <br>Al amparo de la Roca salvo estoy",
     "estrofa": "Cuando ruja el mar furioso,<br> Cuando venga tentación; <br>Al amparo de la Roca salvo estoy. <br>Su cuidado cariñoso, me dará  consolación; Al amparo de la Roca salvo estoy. ",
      "estrofa3": "Bajo el brazo poderoso De Su amor y compasión;<br>Al amparo de la Roca salvo estoy.Hallaré feliz reposo,<BR> si velando en oración;<br> Al amparo de la Roca salvo estoy."
@@ -516,7 +516,44 @@
     "estrofa":"",
     "estrofa3":""
  
+},
+{   "id":"57",
+    "titulo": "57-Señor revelame tu voluntad ",
+    "letra": "<BR>1.Señor revélame tu voluntad, <br>.La senda hazme ver con claridad; <br>Por donde debo andar,<br>qué pasos debo dar,<br>Para poder gozar Tu voluntad.",
+    "coro":"2.Imprime en mí Señor Tu voluntad,<br> Pon en mi corazón seguridad;  <br>Tu voz anhelo oír haciéndome   sentir,<br>  El ansia de cumplir Tu voluntad.",
+    "estrofa":"3.Quiero probar Señor Tu voluntad,<br> Y el gran poder sentir de Tu verdad; <br>Por fe deseo andar, Tu plenitud tomar,<br> Y en todo tiempo amar Tu voluntad",
+    "estrofa3":"4.Cúmplase en mi Señor,<br> Tu voluntad Confío en Tu poder y gran bondad; <br>Rindo mi ser a Ti, que viva Cristo en mí,<br> He de cumplir así Tu voluntad."
+    
+ 
+},
+{
+    "id":"58",
+    "titulo": " 58-Mas el herido fue",
+    "letra": "<BR>//Mas Él herido fue// <br> Por nuestras rebeliones, <br> Él herido fue;",
+    "coro":"//Molido por nuestros  pecados//<br>  El castigo de nuestra paz fue sobre Él,<br> Y por Su llaga, por Su llaga, fuimos nosotros curados.",
+    "estrofa":"Porque Él herido fue,<br> Sí, Él herido fue,  <br> Por nuestras rebeliones,  <br> Él herido fue; Él herido fue.   El herido fue.",
+    "estrofa3":""
+ 
+},
+{
+    "id":"59",
+    "titulo": "59- Hoy de gozo estoy cantando. ",
+    "letra": "<BR><br>Hoy de gozo estoy cantando,<br> Gracias dando al  Señor,<br> Mi corazón  repiqueteando, <br>Din don, din don.",
+    "coro":"",
+    "estrofa":"",
+    "estrofa3":""
+ 
+},
+{
+    "id":"60",
+    "titulo": "60-De Jesus el nombre mi labio ",
+    "letra": "<BR>De Jesús el nombre mi labio nunca calle El lirio es del valle, la estrella del albor; Es el Rey de gloria y mi corazón, De su amor la historia por siempre es mi  canción",
+    "coro":"coro<br> Es un canto de libertad y su melodía resuena, Es un canto de libertad que de paz el alma llena; Es un canto de libertad proclamarlo Él me ordena, ¡Aleluya, Aleluya!,  es un canto de Libertad.",
+    "estrofa":"Redimióme Cristo de mi pecar funesto,  Y en mi boca ha puesto un canto de loor;  Él es mi Maestro, mi Dueño y mi Señor,  Mi Salvador y el vuestro por Su divino amor.",
+    "estrofa3":"Ángeles no entonan, de salvación el canto, Tan solo es del santo, el salvo por Su amor; Antes al pecado serví en obscuridad, Mas ahora he hallado en Él la libertad."
+ 
 }
+
 
 
 ]
