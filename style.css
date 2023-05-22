@@ -44,6 +44,7 @@ header {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 50px;
+  background-color: #097685;
 
   position: flex;
 }
@@ -53,13 +54,13 @@ header {
 }
 
 .input {
-  color: #fcec0b;
+  color: #f2ebea;
   height: 70px;
   width: 100px;
-  border: 90px solid rgb(247, 241, 241);
+  border: 190px solid rgb(247, 241, 241);
   cursor: pointer;
   background: -webkit-linear-gradient(top, #037cac, #34b5b9);
-  font-size: 3em;
+  font-size:100px;
   text-align: center;
 }
 
@@ -133,12 +134,13 @@ header {
 #lista-himnos h1 {
   padding: 10px 20px;
   background: #097685;
-  color: #fff;
+  color: #f4ecec;
   border-radius: 5px 5px 0 0;
   font-size: 20px;
   font-weight: 500px;
   margin: 0;
   clear: both;
+  overflow: hidden;
 }
 
 #lista-himnos h1 span.titleText {
@@ -168,7 +170,7 @@ header {
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #090909;
-  font-size:25px;
+  font-size:22px;
   position: flex;
 }
 
