@@ -164,10 +164,10 @@ header {
   padding: auto;
   line-height: 1;
   
-  height: 400px;
+  height: 600px;
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #141361;
+  color: #090909;
   font-size: large;
   position: flex;
 }
