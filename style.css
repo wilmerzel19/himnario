@@ -54,15 +54,22 @@ header {
 }
 
 .input {
-  color: #f2ebea;
-  height: 70px;
+  color: transparent;
+  height: 100px;
   width: 100px;
-  border: 190px solid rgb(247, 241, 241);
+  border: none;
   cursor: pointer;
-  background: -webkit-linear-gradient(top, #037cac, #34b5b9);
+  background: transparent;
   font-size:100px;
   text-align: center;
+  color: rgb(24, 24, 23);
+  
 }
+.font-medium {
+  font-size: 400px;
+  font-weight: 500px;
+}
+
 
 .containerd {
   display: flex;
@@ -140,7 +147,7 @@ header {
   font-weight: 500px;
   margin: 0;
   clear: both;
-  overflow: hidden;
+
 }
 
 #lista-himnos h1 span.titleText {
