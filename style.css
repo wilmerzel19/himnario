@@ -332,7 +332,7 @@ span#buscar{
 
 #lista-himnos h1 span.titleText {
   float: center;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 500;
   cursor: pointer;
   text-align: center;
@@ -356,14 +356,13 @@ span#buscar{
   height: 600px;
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #090909;
-  font-size:22px;
+  color: #0a0a0a;
+  font-size:23px;
   position: flex;
 }
 
 #message {
   margin: 0 auto;
-  width: 80%;
   color: red;
   font-size: 12px;
   font-weight: 500;
