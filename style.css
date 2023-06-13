@@ -12,10 +12,6 @@ header {
 
 /* Path: index.css */
 
-.containerr {
-  background-color: #f8f1f1;
-  
-}
 
 .img {
   background-color: #fff;
@@ -315,7 +311,7 @@ span#buscar{
   height: 650px;
   background: #fff;
   border-radius: 10px;
-  overflow-y: auto;
+  overflow-y:scroll;
 }
 
 #lista-himnos h1 {
@@ -327,6 +323,7 @@ span#buscar{
   font-weight: 500px;
   margin: 0;
   clear: both;
+  overflow-y:scroll;
 
 }
 
@@ -336,6 +333,7 @@ span#buscar{
   font-weight: 500;
   cursor: pointer;
   text-align: center;
+  overflow-y:auto;
 }
 
 #close-button {
@@ -359,6 +357,7 @@ span#buscar{
   color: #0a0a0a;
   font-size:23px;
   position: flex;
+  overflow-y:scroll;
 }
 
 #message {
