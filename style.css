@@ -349,8 +349,7 @@ span#buscar{
 
 #lista-himnos section {
   padding: auto;
-  line-height: 1;
-  
+  line-height: 40px;
   height: 600px;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
