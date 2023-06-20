@@ -355,7 +355,7 @@ span#buscar{
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #0a0a0a;
-  font-size:23px;
+  font-size:28px;
   position: flex;
   overflow-y:scroll;
 }
