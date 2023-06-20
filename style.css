@@ -303,7 +303,7 @@ span#buscar{
 }
 
 #lista-himnos {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -328,6 +328,7 @@ span#buscar{
 }
 
 #lista-himnos h1 span.titleText {
+  
   float: center;
   font-size: 60px;
   font-weight: 500;
@@ -348,13 +349,14 @@ span#buscar{
 }
 
 #lista-himnos section {
-  padding: auto;
+
+  padding:auto;
   line-height: 40px;
   height: 600px;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   color: #0a0a0a;
-  font-size:28px;
+  font-size:25px;
   position: flex;
   overflow-y:scroll;
 }
