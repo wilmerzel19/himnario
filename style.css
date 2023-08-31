@@ -383,3 +383,18 @@ span#buscar{
   border-top: 20px;
 }
 
+
+  /* Estilos para el modo oscuro */
+  body.dark-mode {
+    background-color: #02032e;
+    color: #f5f5f5;
+}
+
+.dark-mode .navbar {
+    background-color: #02032e;
+    border-color: #111;
+}
+
+.dark-mode .navbar a {
+    color: #f5f5f5;
+}
