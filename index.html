@@ -123,12 +123,7 @@
       </div>
       
       <style>
-        .dark-mode {
-          background-color: #070741;
-          color: #ddd9d9;
-
-          
-        }
+       
 
         .text-center {
           
@@ -140,26 +135,48 @@
 
 
         }
-      </style>
-      <script>
 
-        const toggleButton = document.getElementById('toggle-button');
-        const body = document.body;
+     
+        /* Estilos para el modo oscuro */
+        .dark-mode {
+            /* ... (otros estilos) ... */
+            background-color: #070741;
+            color: #ddd9d9;
+        }
 
-        const texto = document.getElementById('texto');
+        .dark-mode h5,
+        .dark-mode .navbar {
+            color: #ffffff; /* Cambiar color de encabezado y navbar en modo oscuro */
+        }
         
-        toggleButton.addEventListener('change', (e) => {
-          if (e.target.checked) {
-            body.classList.remove('dark-mode');
-            texto.style.color = "#";
-            
-          } else {
-            body.classList.add('dark-mode');
-            
-          }
-        });
+        .dark-mode #texto {
+            color: #ddd9d9; /* Cambiar color de texto en modo oscuro */
+        }
+        
+    </style>
+ <script>
+  const toggleButton = document.getElementById('toggle-button');
+  const body = document.body;
+  const h5 = document.querySelector('h5'); // Seleccionar el elemento h5
+  const navbar = document.querySelector('.navbar'); // Seleccionar el navbar
+  const texto = document.getElementById('texto');
 
-      </script>
+  toggleButton.addEventListener('change', (e) => {
+      if (e.target.checked) {
+          body.classList.remove('dark-mode');
+          h5.style.color = "#000"; // Cambiar el color de encabezado al modo claro
+          navbar.style.color = "#ddd9d9"; // Cambiar el color de navbar al modo claro
+          texto.style.color = "#000"; // Cambiar el color de texto al modo claro
+      } else {
+          body.classList.add('dark-mode');
+          h5.style.color = "#fff"; // Cambiar el color de encabezado en modo oscuro
+          navbar.style.color = "#f8f9fc"; // Cambiar el color de navbar en modo oscuro
+          texto.style.color = "#ddd9d9"; // Cambiar el color de texto en modo oscuro
+      }
+  });
+</script>
+
+
       <script src="https://cdn.tailwindcss.com"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
