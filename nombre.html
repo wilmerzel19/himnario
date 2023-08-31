@@ -11,7 +11,7 @@
 </head>
 <body>
     
-<nav class="border-gray-200 bg-blue-500 dark:bg-gray-800 dark:border-gray-700">
+<nav class="border-gray-200 overflow-scroll bg-blue-500 dark:bg-gray-800 dark:border-gray-700">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="index.html" class="flex items-center">
           <img src="img/logo.png" class="h-8 mr-3" />
@@ -100,8 +100,10 @@
         padding: 10px;
         font-size: 16px;
         border: none;
-        border-bottom: 1px solid #310909;
+        border-bottom: 2px solid #4119e2;
         width: 100%;
+        overflow: scroll;
+        
       }
     #hymn-list {
         list-style-type: none;
@@ -112,7 +114,7 @@
       /* Definición de estilos para cada elemento de la lista de himnos */
       .hymn-item {
         padding: 10px;
-        border-bottom: 1px solid #2e4797;
+        border-bottom: 2px solid #2e4797;
         cursor: pointer;
       }
 
@@ -122,6 +124,8 @@
       }
           body {
             font-family: Arial, sans-serif;
+            font-size: 20px;
+
             /* Fuente de letra predeterminada */
           }
 </style>
