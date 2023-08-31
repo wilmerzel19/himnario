@@ -385,6 +385,7 @@ span#buscar{
 
 
   /* Estilos para el modo oscuro */
+  /* Estilos para el modo oscuro */
   body.dark-mode {
     background-color: #02032e;
     color: #f5f5f5;
@@ -398,3 +399,4 @@ span#buscar{
 .dark-mode .navbar a {
     color: #f5f5f5;
 }
+

@@ -4,3 +4,4 @@ const body = document.body;
 toggleButton.addEventListener('change', () => {
     body.classList.toggle('dark-mode');
 });
+
