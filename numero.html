@@ -5,52 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
 
-    
-    
+
+
     <title>Numero</title>
 
     <style>
-  
-    
         /*Styling as modal */
     </style>
 
 </head>
+
 <body>
-    
-    
-<nav class="border-gray-200 bg-blue-500 dark:border-gray-700">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="index.html" class="flex items-center">
-          <img src="img/logo.png" class="h-8 mr-3" />
-          <span   class="self-center text-md font-semibold whitespace-nowrap text-white">NUMERO DEL CORO</span>
 
-      </a>
-      <a class="flex items-center justify-center mt-4">
-      <label class="flex items-center cursor-pointer">
-        <span class="mr-2">dark/ligh mode</span>
-        <input type="checkbox" class="toggle toggle-primary" id="dark-mode-toggle" />
-    </label>
-</a>
- 
-      </div>
 
-     
-    </div>
+    <nav class="border-gray-200 bg-blue-500 dark:border-gray-700">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="index.html" class="flex items-center">
+                <img src="img/logo.png" class="h-8 mr-3" />
+                <span class="self-center text-md font-semibold whitespace-nowrap text-white">NUMERO DEL CORO</span>
 
- 
-  </nav>
-  
-  <br>
+            </a>
+            <a class="flex items-center justify-center mt-4">
+                <label class="flex items-center cursor-pointer">
+                    <span class="mr-2">dark/ligh mode</span>
+                    <input type="checkbox" class="toggle toggle-primary" id="dark-mode-toggle" />
+                </label>
+            </a>
+
+        </div>
+
+
+        </div>
+
+
+    </nav>
+
     <br>
-  
+    <br>
+
 
     <div class="n">
-      
+
         <form id="formulario-busqueda">
-            <input type="" name="num" id="numero-himno" class="input w-full font-extrabold" inputmode="numeric" pattern="[0-9]{3}" maxlength="3"  title="Por favor, introduce tres números" required />
+            <input type="" name="num" id="numero-himno" class="input w-full font-extrabold" inputmode="numeric"
+                pattern="[0-9]{3}" maxlength="3" title="Por favor, introduce tres números" required />
 
             <br>
             <br>
@@ -59,7 +59,7 @@
 
             <div id="message"></div>
             <div class="container">
-              
+
                 <div class="buttons">
                     <span class="button number" id="uno" onclick="agregarnumero('1')">1</span>
                     <br>
@@ -69,7 +69,7 @@
                     <br>
                     <span id="cuatro" class="button number" onclick="agregarnumero('4')">4</span>
                     <br>
-                   
+
                     <span id="cinco" class="button number" onclick="agregarnumero('5')">5</span>
                     <br>
                     <span id="seis" class="button number" onclick="agregarnumero('6')">6</span>
@@ -80,16 +80,36 @@
                     <br>
                     <span id="nueve" class="button number" onclick="agregarnumero('9')">9</span>
                     <br>
-                   
+
                     <span id="cero" class="button number" onclick="agregarnumero('0')">0</span>
-                    <br> 
-                    <span id="borrar" class="button number" onclick="borrar()"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#f7f7f8}</style><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></span>
                     <br>
-                    <span id="buscar" class="button number" onclick="buscarHimno()"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#f6f9fd}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></span>
+                    <span id="borrar" class="button number" onclick="borrar()"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="1em"
+                            viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #f7f7f8
+                                }
+                            </style>
+                            <path
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg></span>
+                    <br>
+                    <span id="buscar" class="button number" onclick="buscarHimno()"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #f6f9fd
+                                }
+                            </style>
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg></span>
                 </div>
             </div>
 
-         
+
 
 
 
@@ -109,14 +129,14 @@
             </h1>
             <section>
                 <br>
-            <h3 id="bodyText"></h3>
-            <br>
-            <h3 id="coroText"></h3>
-            <br>
-            <h3 id="estrofaText"></h3>
-            <br>
-            <h3 id="estrofa3Text"></h3>
-        </section>
+                <h3 id="bodyText"></h3>
+                <br>
+                <h3 id="coroText"></h3>
+                <br>
+                <h3 id="estrofaText"></h3>
+                <br>
+                <h3 id="estrofa3Text"></h3>
+            </section>
         </div>
 
         <script>
@@ -153,16 +173,16 @@
                 const coroHimno = document.getElementById('coroText');
                 const estrofaHimno = document.getElementById('estrofaText');
                 const estrofa3Himno = document.getElementById('estrofa3Text')
-           
+
 
                 const numeroHimno = document.getElementById('numero-himno').value;
                 const listaHimnos = document.getElementById('lista-himnos');
                 const listaHimnoss = document.getElementById('lista-himnos');
                 const listaHimnosss = document.getElementById('lista-himnos');
                 const listaHimnossss = document.getElementById('lista-himno');
-             
-         
-              
+
+
+
 
 
                 fetch('himnos/h' + numeroHimno + '.json')
@@ -185,10 +205,10 @@
 
                             bodyHimno.innerHTML = himno.letra;
                             coroHimno.innerHTML = himno.coro;
-                            estrofaHimno.innerHTML = himno.estrofa; 
+                            estrofaHimno.innerHTML = himno.estrofa;
                             estrofa3Himno.innerHTML = himno.estrofa3;
-                         
-                        
+
+
 
                             //Reset the form
                             document.getElementById('formulario-busqueda').reset();
@@ -217,11 +237,11 @@
 
             const inputNum = document.getElementById('numero-himno');
 
-  inputNum.addEventListener('input', () => {
-  if (inputNum.value.length > 3) {
-    inputNum.value = inputNum.value.slice(0, 3);
-  }
-});
+            inputNum.addEventListener('input', () => {
+                if (inputNum.value.length > 3) {
+                    inputNum.value = inputNum.value.slice(0, 3);
+                }
+            });
 
         </script>
     </div>

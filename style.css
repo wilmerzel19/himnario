@@ -323,7 +323,6 @@ span#buscar{
   font-weight: 500px;
   margin: 0;
   clear: both;
-  overflow-y:scroll;
 
 }
 
@@ -361,15 +360,59 @@ span#buscar{
   overflow-y:scroll;
 }
 
+section {
+  padding: 15px 30px;
+  margin: 0;
+  clear: both;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 5px 10px;
+  }
+}
+
+section a {
+  color: #343a40;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  display: block;
+  padding: 10px 0;
+  transition: background 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  section a {
+    font-size: 18px;
+  }
+}
+
+section a:hover {
+  background: #e9ecef;
+}
+
+section a.active {
+  background: #ced4da;
+}
+
 #message {
   margin: 0 auto;
-  color: red;
-  font-size: 12px;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 30px;
+  color: #dc3545;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .bg-blue-500 {
