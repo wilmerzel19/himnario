@@ -108,14 +108,15 @@
 
   </div>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      font-size: 20px;
-      color: #333;
-      background-color: #f4f4f9;
-      margin: 0;
-      padding: 0;
-    }
+  body {
+    background-image: url('img/logo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #2e4797;
+ 
+  }
+
   
     #search-box {
       display: block;
@@ -231,7 +232,7 @@
           //letra debajo del titulo
           document.getElementById('tituloinno' + id).innerHTML = himno.letra;
           if (document.getElementById('tituloinno' + id).style.display == 'block') {
-            document.getElementById('tituloinno' + id).style.display = 'none';
+            document.getElementById('tituloinno' + id).style.display = 'block';
           } else {
             document.getElementById('tituloinno' + id).style.display = 'block';
           }
