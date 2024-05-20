@@ -5,7 +5,7 @@
 body {
   @apply text-gray-300 p-0 m-0;
   font-family: 'Arial', sans-serif;
-  background-color: #1a1a1a;
+  background-color: #ffffff;
 }
 
 header {
@@ -228,13 +228,13 @@ section {
   background-color: #f8f9fa;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 20px auto;
+  margin: 30px auto;
   max-width: 800px;
 }
 
 @media (max-width: 768px) {
   section {
-    padding: 10px 20px;
+    padding: 15px 25px;
   }
 }
 

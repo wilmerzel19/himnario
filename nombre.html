@@ -108,43 +108,67 @@
 
   </div>
   <style>
-    #search-box {
-      display: block;
-      margin-bottom: 10px;
-      padding: 10px;
-      font-size: 16px;
-      border: none;
-      border-bottom: 2px solid #4119e2;
-      width: 100%;
-      overflow: scroll;
-
-    }
-
-    #hymn-list {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    /* Definición de estilos para cada elemento de la lista de himnos */
-    .hymn-item {
-      padding: 10px;
-      border-bottom: 2px solid #2e4797;
-      cursor: pointer;
-    }
-
-    /* Definición de estilos para el título de cada himno en la lista */
-    .hymn-title {
-      margin: 0;
-    }
-
     body {
       font-family: Arial, sans-serif;
       font-size: 20px;
-
-      /* Fuente de letra predeterminada */
+      color: #333;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #search-box {
+      display: block;
+      margin: 20px auto;
+      padding: 10px;
+      font-size: 18px;
+      border: none;
+      border-bottom: 3px solid #4119e2;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+  
+    #search-box:focus {
+      border-color: #1a73e8;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      outline: none;
+    }
+  
+    #hymn-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+  
+    .hymn-item {
+      padding: 15px;
+      border-bottom: 2px solid #2e4797;
+      cursor: pointer;
+      background-color: #fff;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  
+    .hymn-item:hover {
+      background-color: #eef2f7;
+      transform: translateY(-2px);
+    }
+  
+    .hymn-title {
+      margin: 0;
+      font-size: 1.2em;
+      color: #1a73e8;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+  
+    .hymn-item:hover .hymn-title {
+      color: #0056b3;
     }
   </style>
+  
 
   <script>
     var hymnList = document.getElementById('hymn-list');
